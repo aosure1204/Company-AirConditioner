@@ -1,0 +1,32 @@
+<resources>
+    <!--    <string name="app_name">AirConditioner</string>
+    <string name="back">Back</string>
+    <string name="parking_mode">Parking mode</string>
+    <string name="driving_mode">Driving mode</string>-->
+
+    <string name="app_name">空调</string>
+    <string name="back">返回</string>
+    <string name="parking_mode">驻车模式</string>
+    <string name="driving_mode">行车模式</string>
+
+    <!-- 风量 行车模式 冷风 8档 -->
+    <string-array name="fengliang_driving_cold">
+        <item>@drawable/img_fengliang1</item>
+        <item>@drawable/img_fengliang2</item>
+        <item>@drawable/img_fengliang3</item>
+        <item>@drawable/img_fengliang4</item>
+        <item>@drawable/img_fengliang5</item>
+        <item>@drawable/img_fengliang6</item>
+        <item>@drawable/img_fengliang7</item>
+        <item>@drawable/img_fengliang8</item>
+    </string-array>
+
+    <!-- 风量 行车模式 热风 8档 -->
+    <string-array name="fengliang_warm">
+
+    </string-array>
+    <string name="title_activity_arc_test">ArcTestActivity</string>
+
+    <string name="air_is_out_of_range">风量值超出范围</string>
+    <string name="temperature_is_out_of_range">温度值超出范围</string>
+</resources>

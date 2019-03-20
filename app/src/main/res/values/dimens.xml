@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<dimen name="actionbar_height">99dp</dimen>-->
+    <!--<dimen name="function_button_width">202dp</dimen>-->
+    <!--<dimen name="function_button_height">120dp</dimen>-->
+    <dimen name="function_button_marginLeft">3dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

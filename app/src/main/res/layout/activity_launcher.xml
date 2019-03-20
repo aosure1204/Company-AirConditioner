@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_quanju"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_action_bar">
+
+        <LinearLayout
+            android:id="@+id/action_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_bar_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="#B0D7FF"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/parking_mode"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/air_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="78dp"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_parking_daytime_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_parking_daytime_night" />
+
+            <ImageButton
+                android:id="@+id/btn_driving_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/function_button_marginLeft"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_driving_ac" />
+
+            <ImageButton
+                android:id="@+id/btn_driving_eco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/function_button_marginLeft"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_driving_eco" />
+
+            <ImageButton
+                android:id="@+id/btn_loop_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/function_button_marginLeft"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_loop_out" />
+        </LinearLayout>
+
+        <com.wd.airconditioner.ArcSeekBar
+            android:id="@+id/arc_seek_bar_air_level"
+            android:layout_width="90dp"
+            android:layout_height="384dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="288dp"
+            app:arc_progress_location="left"
+            app:arc_start_angle="147"
+            app:arc_angle_size="66"
+            app:arc_circle_radius="352dp"
+            app:arc_max_progress="8"
+            app:arc_progress="4" />
+
+        <com.wd.airconditioner.ArcSeekBar
+            android:id="@+id/arc_seek_bar_temp"
+            android:layout_width="90dp"
+            android:layout_height="384dp"
+            android:layout_marginStart="766dp"
+            android:layout_marginLeft="766dp"
+            android:layout_marginTop="285dp"
+            app:arc_progress_location="right"
+            app:arc_start_angle="33"
+            app:arc_angle_size="-66"
+            app:arc_circle_radius="352dp"
+            app:arc_max_progress="8"
+            app:arc_progress="4" />
+
+        <TextView
+            android:id="@+id/text_air_level_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginLeft="184dp"
+            android:layout_marginTop="456dp"
+            android:text="8"
+            android:textColor="#B0D7FF "
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/text_temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="666dp"
+            android:layout_marginLeft="666dp"
+            android:layout_marginTop="456dp"
+            android:text="32°C"
+            android:textColor="#B0D7FF"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:id="@+id/img_wind_direction_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="342dp"
+            android:src="@drawable/ic_wind_direction_face_cold" />
+
+        <ImageView
+            android:id="@+id/img_wind_direction_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="456dp"
+            android:src="@drawable/ic_wind_direction_foot_disable" />
+
+        <ImageView
+            android:id="@+id/img_show_wind_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1107dp"
+            android:layout_marginLeft="1107dp"
+            android:layout_marginTop="167dp"
+            android:src="@drawable/ic_wind_window_cold_big" />
+
+        <ImageView
+            android:id="@+id/img_show_wind_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1074dp"
+            android:layout_marginLeft="1074dp"
+            android:layout_marginTop="316dp"
+            android:src="@drawable/ic_wind_people_cold_big" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="188dp"
+            android:layout_marginTop="168dp"
+            android:src="@drawable/ic_air_big" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="204dp"
+            android:layout_marginTop="676dp"
+            android:src="@drawable/ic_air_small" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="712dp"
+            android:layout_marginTop="168dp"
+            android:src="@drawable/ic_temp_big" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="726dp"
+            android:layout_marginTop="676dp"
+            android:src="@drawable/ic_temp_small" />
+    </RelativeLayout>
+</LinearLayout>

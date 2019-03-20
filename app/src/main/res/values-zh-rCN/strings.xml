@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">空调</string>
+    <string name="back">返回</string>
+    <string name="parking_mode">驻车模式</string>
+    <string name="driving_mode">行车模式</string>
+
+</resources>
