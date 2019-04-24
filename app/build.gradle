@@ -10,10 +10,25 @@ android {
         versionName "0.01" // 这里 versionname: -> 0.11.2， 0代表主版本， 11代表次版本（占两位），2代表当前发布的次数
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        wdsys {
+            keyAlias 'mywd'
+            keyPassword '123456'
+            storeFile file('D:/software/Android/Android Studio/mywd-123456.jks')
+            storePassword '123456'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.wdsys
+        }
+        debug {
+            signingConfig signingConfigs.wdsys
         }
     }
 ///add step 1

@@ -118,7 +118,7 @@
             app:arc_angle_size="-66"
             app:arc_circle_radius="352dp"
             app:arc_max_progress="8"
-            app:arc_progress="4" />
+            app:arc_progress="8" />
 
         <TextView
             android:id="@+id/text_air_level_value"
@@ -127,7 +127,7 @@
             android:layout_marginStart="184dp"
             android:layout_marginLeft="184dp"
             android:layout_marginTop="456dp"
-            android:text="8"
+            android:text="0"
             android:textColor="#B0D7FF "
             android:textSize="60sp" />
 
@@ -138,7 +138,7 @@
             android:layout_marginStart="666dp"
             android:layout_marginLeft="666dp"
             android:layout_marginTop="456dp"
-            android:text="32°C"
+            android:text="32.5°C"
             android:textColor="#B0D7FF"
             android:textSize="60sp" />
 

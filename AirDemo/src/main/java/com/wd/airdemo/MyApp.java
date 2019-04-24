@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Build;
 
 import com.wd.ms.tools.MSTools;
-
+import com.wd.airdemo.module.AirModule;
 
 public class MyApp extends Application {
     @Override
@@ -15,28 +15,13 @@ public class MyApp extends Application {
         MSTools.getInstance().init(this, new MSTools.IConnectListener() {
             @Override
             public void onSuccess() {
-                openSelfServer(true);
+                AirModule.Init();
             }
 
             @Override
             public void onFailed() {
-                openSelfServer(false);
             }
         });
-    }
-
-    private void openSelfServer(boolean on) {
-        Intent ii = new Intent(this, MyServer.class);
-        if (on){
-            // 启动服务的地方
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                 startForegroundService(ii);
-            } else {
-                startService(ii);
-            }
-        }
-        else
-            stopService(ii);
     }
 
 }

@@ -19,9 +19,9 @@ public class DataUtil {
     public static final int RUN_MODE_PARKING_NIGHT = 3;
 
     //空调内/外循环
-    public static final int LOOP_MODE_IN = 1;
-    public static final int LOOP_MODE_OUT = 2;
-    public static final int LOOP_MODE_IN_OUT = 3;
+    public static final int LOOP_MODE_IN = 0;
+    public static final int LOOP_MODE_OUT = 1;
+    public static final int LOOP_MODE_IN_OUT = 2;
 
     //空调制冷或制热模式
     public static final int ColdMode = 1;

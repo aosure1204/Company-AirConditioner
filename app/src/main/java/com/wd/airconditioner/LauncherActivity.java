@@ -3,6 +3,7 @@ package com.wd.airconditioner;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -382,6 +383,7 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
      * */
     private void onTemperatureChange(int data, boolean isFromUser) {
         if(data < mTempMinValue || data > (mTempMinValue + DataUtil.TEMP_STEP * mTempLevelMax)) {
+            Log.d(TAG, "onTemperatureChange: " + data);
             Toast.makeText(this, R.string.temperature_is_out_of_range, Toast.LENGTH_LONG).show();
             return;
         }
@@ -460,6 +462,7 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
+        Log.d(TAG, "onClick: enter");
         switch (v.getId()) {
             case R.id.action_bar_back:
                 finish();
